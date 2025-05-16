@@ -1,7 +1,6 @@
 {
   "name": "nba-shot-visualizer",
   "private": true,
-  "homepage": "https://Sinan-0.github.io/nba-three-point-revolution",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
