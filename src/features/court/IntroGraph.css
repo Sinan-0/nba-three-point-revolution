@@ -1,0 +1,72 @@
+/* General styles for all circles representing shots */
+svg circle.dot {
+    stroke-width: 0.2;
+    fill-opacity: 0.9;
+    opacity: 0.7;
+    r: 0.7px;
+}
+
+/* Specific styles for 2004 shots */
+svg circle.dot.shot-year-2004 {
+    fill: #007ac1;
+    stroke: #31313d;
+}
+
+/* Specific styles for 2024 shots */
+svg circle.dot.shot-year-2024 {
+    fill: #ef3b24;
+    stroke: #481f09;
+}
+
+/* Style for the legend circles */
+svg circle.legend-circle {
+    stroke-width: 0.2;
+    stroke: #382f36;
+    r: 1px;
+    opacity: 1;
+}
+
+/*Style for the 2004 legend circle */
+svg circle.legend-circle.legend-circle-2004{
+    fill: #007ac1;
+}
+
+/*Style for the 2024 legend circle */
+svg circle.legend-circle.legend-circle-2024{
+    fill: #ef3b24;
+}
+
+/*General style for the legend text*/
+svg text.legend-text{
+    font-size: 5px;
+    font-weight: normal;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Specific style for the 2004 legend text */
+svg text.legend-text.legend-text-2004 {
+    fill: #007ac1;
+}
+
+/* Specific style for the 2024 legend text */
+svg text.legend-text.legend-text-2024 {
+    fill: #ef3b24;
+}
+
+/* Add a general style for the legend on hover */
+svg g.legend:hover {
+    font-weight: bold;
+}
+
+/* IntroGraph.css */
+.tooltip-intro-graph {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    pointer-events: none; /* Important: Prevents the tooltip from interfering with mouse events */
+    z-index: 10; /* Ensure the tooltip is above other elements */
+  }

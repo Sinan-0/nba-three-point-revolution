@@ -1,0 +1,99 @@
+/* Target elements ONLY inside the specific wrapper */
+.perc-per-zone-chart-wrapper svg {
+  font-size: initial; /* Reset font size inheritance */
+}
+
+.perc-per-zone-chart-wrapper svg text {
+  /* Reset font size for all SVG text within this chart */
+  font-size: 12px; /* Or your desired base font size */
+  /* Re-apply visible color if needed, though inline props should work */
+  /* fill: #e0e0e0; */
+}
+
+/* Specific overrides for Recharts elements if needed */
+.perc-per-zone-chart-wrapper .recharts-cartesian-axis-tick-value {
+   font-size: 12px; /* Ensure tick font size */
+   fill: #e0e0e0; /* Ensure tick color */
+}
+
+.perc-per-zone-chart-wrapper .recharts-label {
+   font-size: 14px; /* Ensure label font size */
+    fill: #e0e0e0; /* Ensure label color */
+}
+
+.perc-per-zone-chart-wrapper .recharts-legend-item-text {
+   font-size: 13px; /* Ensure legend font size */
+   fill: #e0e0e0 !important; /* Use important if wrapperStyle color is overridden */
+}
+
+.perc-per-zone-chart-wrapper .recharts-legend-item .recharts-surface {
+    /* Ensures legend color swatches are visible */
+    /* Recharts usually applies fill inline, but override stroke/fill if needed */
+    stroke: none !important; /* Remove the forced white stroke */
+    /* fill: inherit !important; */ /* Let inline fill work */
+}
+
+
+
+
+/* Reset styles for axis lines if they were affected */
+.perc-per-zone-chart-wrapper .recharts-cartesian-axis-line {
+    stroke: #e0e0e0 !important; /* Use your visible color */
+    stroke-width: 1px !important; /* Reset thickness */
+}
+
+/* Reset styles for grid lines */
+.perc-per-zone-chart-wrapper .recharts-cartesian-grid-line line {
+    stroke: #555555 !important; /* Use your grid color */
+    stroke-width: 1px !important; /* Reset thickness */
+}
+
+/* Ensure active dots are visible */
+.perc-per-zone-chart-wrapper .recharts-active-dot circle {
+    /* Let inline styles handle fill/stroke */
+    stroke: white !important; /* Example override if needed */
+    stroke-width: 1px !important; /* Example override */
+}
+
+.perc-per-zone-chart-wrapper .recharts-tooltip-wrapper .recharts-tooltip-item {
+  color: #e0e0e0 !important; /* Use your VISIBLE_COLOR */
+  font-weight: normal !important; /* Also force normal weight */
+}
+
+/*lines*/
+.perc-per-zone-chart-wrapper .recharts-line.line-MidRange-solid path {
+  stroke: #FF6B2D !important;
+  stroke-width: 4px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-InThePaint-solid path {
+  stroke: #A65F44 !important;
+  stroke-width: 4px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-ThreePointShot-solid path {
+  stroke: #FFD700 !important;
+  stroke-width: 4px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-RestrictedArea-solid path {
+  stroke: #707565 !important;
+  stroke-width: 4px !important;
+}
+
+
+
+.perc-per-zone-chart-wrapper .recharts-line.line-MidRange-dashed path {
+  stroke: #FF6B2D !important;
+  stroke-width: 1.5px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-InThePaint-dashed path {
+  stroke: #A65F44 !important;
+  stroke-width: 1.5px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-ThreePointShot-dashed path {
+  stroke: #FFD700 !important;
+  stroke-width: 1.5px !important;
+}
+.perc-per-zone-chart-wrapper .recharts-line.line-RestrictedArea-dashed path {
+  stroke: #707565 !important;
+  stroke-width: 2px !important;
+}
+
