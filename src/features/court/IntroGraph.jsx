@@ -35,7 +35,7 @@ const IntroGraph = ({ csvFile }) => {
   useEffect(() => {
     if (!csvFile) return;
 
-    d3.csv(`/datas/${csvFile}`).then((loadedData) => {
+    d3.csv(import.meta.env.BASE_URL + `/datas/${csvFile}`).then((loadedData) => {
       const formattedData = loadedData.map(d => ({
         x: +d.x,
         y: +d.y,

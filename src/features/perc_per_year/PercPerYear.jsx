@@ -39,7 +39,7 @@ export default function PercPerYear({ years_to_highlight = [2004, 2011] }) {
     const [rawData, setRawData] = useState([]); // Renamed for clarity
 
     useEffect(() => {
-        d3.csv(`/datas/perc_per_year_per_zone.csv`).then((loadedData) => {
+        d3.csv(import.meta.env.BASE_URL + `/datas/perc_per_year_per_zone.csv`).then((loadedData) => {
             console.log("Loaded Data (Raw):", loadedData); // 1. Check raw loaded data
 
             const formattedData = loadedData.map(d => {

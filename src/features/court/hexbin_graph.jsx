@@ -10,7 +10,7 @@ const HexbinGraph = ({ selectedFile }) => {
   useEffect(() => {
     if (!selectedFile) return;
 
-    d3.csv(`/datas/${selectedFile}`).then((loadedData) => {
+    d3.csv(import.meta.env.BASE_URL + `/datas/${selectedFile}`).then((loadedData) => {
       loadedData.forEach(d => {
         d.x = +d.x;
         d.y = +d.y;

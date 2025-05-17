@@ -89,7 +89,7 @@ const App = () => {
       <div class="conclusion" style={{paddingTop: '20px'}}>
         <h2>Conclusion</h2>
         <p style={{width: '80%', marginLeft: 'auto', marginRight:'auto'}}>
-          We saw the shot selection in the NBA completely changed, Mid-range shots went from being the most popular (35% of all attempts) to the least (just 11%) over 20 years. Almost the entire difference went in favor of the three-point shot.
+          We saw that the shot selection in the NBA completely changed, Mid-range shots went from being the most popular (35% of all attempts) to the least (just 11%) over 20 years. Almost the entire difference went in favor of the three-point shot.
           Explanations include the impact of data-driven individuals having important roles in organizations, and exceptional players having success with the 3-point shot being their main weapon.
           Of course, these are not exhaustive explanations, as there are more complex factors we haven't covered here, such as evolving defensive strategies, subtle changes in officiating, and shifts in youth player development and skill training.
           Also, the decrease of Mid-Range shots being due to analytics alone is contradictory with the rise of shots taken in the Paint (non-RA), as they both have a very similar point/shot value over the last 20 years: ~0.8 for Mid-Range shots vs ~0.81 for shots in the Paint (non-RA).
